@@ -1,0 +1,126 @@
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Lato', sans-serif;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+h1{
+    margin: 0 0 3rem 0;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin: 6rem 8rem;
+}
+
+@media screen and (max-width: 1280px){
+    .header{
+        flex-direction: column;
+        margin: 6rem 2rem;
+    }
+}
+
+
+.header__registro {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+@media screen and (max-width: 1280px){
+    .header__registro{
+        width: 100%;
+        margin-bottom: 6rem;
+    }
+}
+
+.header__registro h1{
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+
+.registro__form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.registro__form label{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.registro__form input{
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 2rem;
+    border: 1px solid #000;
+    min-width: 33rem;
+}
+
+.registro__form input[type="submit"]{
+    background-color: #000;
+    color: #fff;
+    border: none;
+    margin: 2rem auto 0 auto;
+    padding: 1.5rem;
+    border-radius: 3rem;
+}
+
+.registro__form input[type="submit"]:hover{
+    cursor: pointer;
+    background-color: cadetblue;
+
+}
+
+.header__datos{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    overflow-x: auto;
+}
+@media screen and (max-width: 1280px){
+    .header__datos{
+        width: 80rem;
+    }
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+thead{
+    background-color: cornflowerblue;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+th{
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+td{
+    padding: 1rem;
+    text-align: center;
+}
+
+/**
+ * Cada elemento par se pinta de un color y cada elemento impar de otro
+ */
+tr{
+    font-size: 1.5rem;
+}
